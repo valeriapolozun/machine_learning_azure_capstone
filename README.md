@@ -1,6 +1,6 @@
 
 # Capstone project for Azure Machine Learning Engineer Nanodegree
-# Operationalize an ML model  - predicting mobile prices 
+## Operationalize an ML model  - predicting mobile prices 
 
 
 In this project we use a public external dataset.
