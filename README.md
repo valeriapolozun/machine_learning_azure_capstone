@@ -7,7 +7,8 @@ In this project we use a public external dataset.
 This dataset will be used for training machine learning models on MS Azure. We use 2 different ways for trainining the model:
 1.) AutoML
 2.) Hyperparameter tuning with Hyperdrive
-We compare the performances of the 2 best models of the above methods and we deploy the best model.
+
+We compare the performances of the 2 methods and we deploy the best model.
 In the end we use the end-point which has been created and we test using the service by generating some predictions with some test data.
 
 
