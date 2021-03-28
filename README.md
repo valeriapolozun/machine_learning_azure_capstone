@@ -54,7 +54,9 @@ wifi: Has wifi or not
 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+
+The dataset is accessed directly from my github repo as a csv file.
+After reading the csv file we create a Tabular Dataset from the a pandas dataframe.
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
