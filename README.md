@@ -1,19 +1,55 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-# Your Project Title Here
+# Capstone project for Azure Machine Learning Engineer Nanodegree
 
-*TODO:* Write a short introduction to your project.
+
+In this project we use a public external dataset.
+This dataset will be used for training machine learning models on MS Azure. We use 2 different ways for trainining the model:
+1.) AutoML
+2.) Hyperparameter tuning with Hyperdrive
+We compare the performances of the 2 best models of the above methods and we deploy the best model.
+In the end we use the end-point which has been created and we test using the service by generating some predictions with some test data.
+
 
 ## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+
+In Azure ML Studio we are going to use jupyter notebooks for running the AutoML and Hyperdrive trainings.
+In order to run the notebooks a compute instance has been used:
 
 ## Dataset
 
 ### Overview
-*TODO*: Explain about the data you are using and where you got it from.
+
+The dataset used includes data about mobile phones, such as battery, RAM, clock speed, availability of dual sim etc.
+In total there are 20 different features about the phones.
+The target variable is a price range of the mobile phones.
+
+
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+The aim is to understand the relationship between the mobile phone features and price range and based on that we want to predict the price range of mobile phones.
+
+The features which will be used:
+battery_power: Total energy a battery can store in one time measured in mAh
+blue: Has bluetooth or nota
+clock_speed: Speed at which microprocessor executes instructions
+dual_sim: Has dual sim support or not
+fc: Front Camera mega pixels
+four_g: Has 4G or not
+int_memory: Internal Memory in Gigabytes
+m_dep: Mobile Depth in cm
+mobile_wt: Weight of mobile phone
+n_cores: Number of cores of processor
+pc: Primary Camera mega pixels
+px_height: Pixel Resolution Height
+px_width: Pixel Resolution Width
+ram: Random Access Memory in Megabytes
+sc_h: Screen Height of mobile in cm
+sc_w. Screen Width of mobile in cm
+talk_time: longest time that a single battery charge will last when you are
+three_g: Has 3G or not
+touch_screen: Has touch screen or not
+wifi: Has wifi or not
+
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
