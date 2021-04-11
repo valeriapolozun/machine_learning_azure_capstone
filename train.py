@@ -1,4 +1,4 @@
-from sklearn.linear_model import DecisionTree
+from sklearn.tree import DecisionTreeClassifier
 import argparse
 import os
 import numpy as np
@@ -12,7 +12,9 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 from argparse import ArgumentParser
 
 
-ds = pd.read_csv('data/mobile_price_data.csv')
+#ds = pd.read_csv('data/mobile_price_data.csv')
+
+ds=pd.read_csv("https://raw.githubusercontent.com/valeriapolozun/machine_learning_azure_capstone/803e04124532b8921a0b19d70aa71abaccf74a1f/Mobile_Price_Classification.csv")
 
 
 x = ds[['battery_power','blue','clock_speed','dual_sim','fc','four_g','int_memory','m_dep','mobile_wt','n_cores','pc','px_height','px_width','ram','sc_h','sc_w','talk_time','three_g','touch_screen','wifi']]
@@ -36,7 +38,7 @@ def main():
     run.log("Min samples split:", np.int(args.min_samples_split))
     run.log("Max features:", np.int(args.max_features))
 
-    model = DecisionClassifierTree(max_depth=args.max_depth, min_samples_split=args.min_samples_split,max_features=args.max_features).fit(x_train, y_train)
+    model = DecisionTreeClassifier(max_depth=args.max_depth, min_samples_split=args.min_samples_split,max_features=args.max_features).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
