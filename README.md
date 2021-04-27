@@ -18,6 +18,8 @@ In the end we use the end-point which has been created and we test using the ser
 In Azure ML Studio we are going to use jupyter notebooks for running the AutoML and Hyperdrive trainings.
 In order to run the notebooks a compute instance has been used: STANDARD_DS3_V2 virtual machine
 
+![apr27_compute_instance_notebook](https://user-images.githubusercontent.com/4347923/116284597-8b0c5280-a78d-11eb-962d-cfb066f2e405.JPG)
+
 ## Dataset
 
 ### Overview
@@ -134,12 +136,22 @@ The parameters of the best model:
 - Min samples split:4
 - Max depth: 50
 
+In the following screenshots you can see the status of the model training by using `RunDetails` widget as well as the best model trained with it's parameters:
 
+![hyperdrive_run_details3_27april](https://user-images.githubusercontent.com/4347923/116284600-8ba4e900-a78d-11eb-8317-5a6ecbe39b7f.JPG)
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![hyperdrive_run_details4_27april](https://user-images.githubusercontent.com/4347923/116284603-8c3d7f80-a78d-11eb-8e78-c5a598b1e1d1.JPG)
+
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+The best performing model was achieved by using the AutoML functionalities of MS Azure.
+The best model has been deployed and afterwards the end-point has been tested by sending some test data to it:
+
+![apri_27_deployed_model_healthy](https://user-images.githubusercontent.com/4347923/116284599-8ba4e900-a78d-11eb-8889-79c337848010.JPG)
+
+
+
 
 ## Screen Recording
 Here is a screen recording of the project in action: https://youtu.be/4Hg7rqpJPWo
