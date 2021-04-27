@@ -136,7 +136,7 @@ I applied random sampling with the following parameter options:
 
 ![apr27_hyperparm_sampling](https://user-images.githubusercontent.com/4347923/116286898-0b33b780-a790-11eb-8ffd-0e63d7710ce6.JPG)
 
-Apart from that the BanditPolicy was used as early termination policy, when the primary metric was not within a slack factor compared to the best performing model.
+BanditPolicy was used as an early termination policy so that the run terminates when the primary metric was not within a slack factor compared to the best performing model.
 
 ### Results
 
@@ -170,7 +170,11 @@ The best model has been deployed and afterwards the end-point has been tested by
 
 ![apri_27_deployed_model_healthy](https://user-images.githubusercontent.com/4347923/116284599-8ba4e900-a78d-11eb-8889-79c337848010.JPG)
 
+![apr27_webservice_test1](https://user-images.githubusercontent.com/4347923/116290133-703cdc80-a793-11eb-9088-8bd1aad530f1.JPG)
 
+![apr27_webservice_test2](https://user-images.githubusercontent.com/4347923/116290139-70d57300-a793-11eb-9d04-1eb11f53272f.JPG)
+
+The service end-point successfully answered to the service request.
 
 
 ## Screen Recording
