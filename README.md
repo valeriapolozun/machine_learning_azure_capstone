@@ -106,7 +106,7 @@ The settings, which were tuned:
 
 The run details with the actual status of the AutoML were visible during the run:
 
-
+![automl_run_details2](https://user-images.githubusercontent.com/4347923/116285781-c2c7ca00-a78e-11eb-8c78-a578e4395711.JPG)
 
 
 The best algorithm found had an accuracy level of 80.04%.
@@ -114,11 +114,6 @@ The best algorithm found had an accuracy level of 80.04%.
 The run details of the model training and thee parameters of the best model with the algorithm "StackEnsamble" are shown below:
 
 ![apr_27_AutoML_best_model](https://user-images.githubusercontent.com/4347923/116284587-89db2580-a78d-11eb-9ce5-1568ee47134c.JPG)
-
-
-
-
-
 
 
 
