@@ -187,7 +187,7 @@ The screencast demonstrates:
 ## Future Improvement Possibilities for the Project
 
 - The performance of the model in the Hyperdrive experiment can be further improved by:
-  - trying out other algorithms, which work well with Classification problems, such as Random Forest, K-nearest neighbors, Gradient Boosting
+  - trying out other algorithms, which work well for Classification problems, such as Random Forest, K-nearest neighbors, Gradient Boosting
   - extending the parameter search space for the parameters, which have been already used
   - adding new parameters
 
