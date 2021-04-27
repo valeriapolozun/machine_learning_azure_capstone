@@ -2,8 +2,9 @@
 # Capstone project for Azure Machine Learning Engineer Nanodegree
 ## Operationalize an ML model  - predicting mobile prices 
 
+The aim of this project is to build a fully operationalized ML model pipeline in MS Azure. The outcome of the project is a working service - which is ready for consumption: making predictions on new, unseen data points.
 
-In this project we use a public external dataset.
+In this project we use a public external dataset about mobile phones.
 This dataset will be used for training machine learning models on MS Azure. We use 2 different ways for trainining the model:
 1.) AutoML
 2.) Hyperparameter tuning with Hyperdrive
@@ -23,7 +24,8 @@ In order to run the notebooks a compute instance has been used: STANDARD_DS3_V2 
 
 The dataset used includes data about mobile phones, such as battery, RAM, clock speed, availability of dual sim etc.
 In total there are 20 different features about the phones.
-The target variable is a price range of the mobile phones.
+
+The target variable is a price range of the mobile phones, which is a number between 0 (=very low price) and 3(=very high price)
 
 The data set is a public data set and available on Kaggle:
 https://www.kaggle.com/iabhishekofficial/mobile-price-classification
