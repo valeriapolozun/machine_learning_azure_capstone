@@ -125,10 +125,18 @@ The parameters of this best model:
 
 The model chosen was the decision tree algorithm as it is working very well for classification type of problems.
 
+The primary metric was "Accuracy".
+
 The parameters I selected for hyperparameter search were the following:
 - Max_depth
 - Min_samples_split
 - Max_features
+
+I applied random sampling with the following parameter options:
+
+![apr27_hyperparm_sampling](https://user-images.githubusercontent.com/4347923/116286898-0b33b780-a790-11eb-8ffd-0e63d7710ce6.JPG)
+
+Apart from that the BanditPolicy was used as early termination policy, when the primary metric was not within a slack factor compared to the best performing model.
 
 ### Results
 
