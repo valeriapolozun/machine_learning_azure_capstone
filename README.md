@@ -25,10 +25,15 @@ The dataset used includes data about mobile phones, such as battery, RAM, clock 
 In total there are 20 different features about the phones.
 The target variable is a price range of the mobile phones.
 
+The data set is a public data set and available on Kaggle:
+https://www.kaggle.com/iabhishekofficial/mobile-price-classification
 
 
 ### Task
 The aim is to understand the relationship between the mobile phone features and price range and based on that we want to predict the price range of mobile phones.
+
+Target variable:
+The price with value of 0(low cost), 1(medium cost), 2(high cost) and 3(very high cost).
 
 The features which will be used:
 
@@ -79,7 +84,19 @@ The dataset is accessed directly from my github repo as a csv file.
 After reading the csv file we create a Tabular Dataset from the a pandas dataframe.
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+The automl_config class includes all the settings of the configuration, which is used for the AutoML machine experiment in Azure.
+
+The settings, which were tuned:
+  - experiment_timeout_minutes (=maximum duration of the experiment in minutes before it terminates): 25
+  - max_concurrent_iterations (=nr. of iterations which are done parallel): 4
+  - task (=type of task): 'Classification'
+  - compute_target (=compute target to run the experiment)
+  - training_data (=training data to be used)
+  - primary metric (=which metric should be used for the performance measuring): 'Accuracy'
+  - enable_early_stopping: 'True'
+  - n_cross_validations (=nr. of cross validations): 5
+  - featurization (= whether featurization should be done automatically): 'auto'
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
