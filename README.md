@@ -109,11 +109,15 @@ The run details with the actual status of the AutoML were visible during the run
 ![automl_run_details2](https://user-images.githubusercontent.com/4347923/116285781-c2c7ca00-a78e-11eb-8c78-a578e4395711.JPG)
 
 
-The best algorithm found had an accuracy level of 80.04%.
-
-The run details of the model training and thee parameters of the best model with the algorithm "StackEnsamble" are shown below:
+The best algorithm found had an accuracy level of 80.04% - achieved with the algorithm "StackEnsamble" are shown below:
 
 ![apr_27_AutoML_best_model](https://user-images.githubusercontent.com/4347923/116284587-89db2580-a78d-11eb-9ce5-1568ee47134c.JPG)
+
+The parameters of this best model:
+
+![apr_27_AutoML_best_model_param](https://user-images.githubusercontent.com/4347923/116286499-96607d80-a78f-11eb-900c-44def81f7985.JPG)
+
+![apr_27_AutoML_best_model_param2](https://user-images.githubusercontent.com/4347923/116286501-9791aa80-a78f-11eb-84e2-0bce899db345.JPG)
 
 
 
