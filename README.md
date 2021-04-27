@@ -15,7 +15,7 @@ In the end we use the end-point which has been created and we test using the ser
 ## Project Set Up and Installation
 
 In Azure ML Studio we are going to use jupyter notebooks for running the AutoML and Hyperdrive trainings.
-In order to run the notebooks a compute instance has been used:
+In order to run the notebooks a compute instance has been used: STANDARD_DS3_V2 virtual machine
 
 ## Dataset
 
