@@ -179,6 +179,7 @@ The service end-point successfully answered to the service request.
 
 ## Screen Recording
 Here is a screen recording of the project in action: https://youtu.be/4Hg7rqpJPWo
+
 The screencast demonstrates:
 - A working model
 - Demo of the deployed  model
