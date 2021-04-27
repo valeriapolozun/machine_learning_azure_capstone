@@ -99,16 +99,40 @@ The settings, which were tuned:
   - featurization (= whether featurization should be done automatically): 'auto'
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+The run details with the actual status of the AutoML were visible during the run:
+
+
+
+
+The best algorithm found had an accuracy level of 80.04%.
+
+The parameters of the best model with the algorithm "StackEnsamble" are shown below:
+
+
+
+
+
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+The model chosen was the decision tree algorithm as it is working very well for classification type of problems.
+
+The parameters I selected for hyperparameter search were the following:
+- Max_depth
+- Min_samples_split
+- Max_features
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+
+The best algorithm found had an accuracy level of 77%.
+
+The parameters of the best model:
+- Max_features: 16
+- Min samples split:4
+- Max depth: 50
+
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
