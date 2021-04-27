@@ -184,7 +184,7 @@ The screencast demonstrates:
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Future Improvements for the project
+## Future Improvement Possibilities for the Project
 
 - The performance of the model in the Hyperdrive experiment can be further improved by:
   - trying out other algorithms, which work well with Classification problems, such as Random Forest, K-nearest neighbors, Gradient Boosting
@@ -195,10 +195,12 @@ The screencast demonstrates:
   - request rates
   - reponse times
   - failure rates
+  -
   How to enable application insights: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-app-insights
   
   
 - Deploy the model at the edge and generate the data flow at the IoT hub
+
   How to do it: https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-deploy-machine-learning?context=azure%2Fmachine-learning%2Fservice%2Fcontext%2Fml-context&view=iotedge-2020-11&viewFallbackFrom=azure-ml-py#create-and-deploy-azure-machine-learning-module
   
 
