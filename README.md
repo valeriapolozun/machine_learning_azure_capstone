@@ -143,6 +143,15 @@ In the following screenshots you can see the status of the model training by usi
 ![hyperdrive_run_details4_27april](https://user-images.githubusercontent.com/4347923/116284603-8c3d7f80-a78d-11eb-8e78-c5a598b1e1d1.JPG)
 
 
+![apr_27_Hyperdrive_best_model](https://user-images.githubusercontent.com/4347923/116284589-8a73bc00-a78d-11eb-9338-9f4a817fd5a9.JPG)
+
+![apr_27_Hyperdrive_best_model2](https://user-images.githubusercontent.com/4347923/116284590-8a73bc00-a78d-11eb-9bd1-1ac63ce7f0c1.JPG)
+
+![apr_27_Hyperdrive_best_model3](https://user-images.githubusercontent.com/4347923/116284594-8b0c5280-a78d-11eb-8989-4c3b7d4ce9d8.JPG)
+
+![apr_27_Hyperdrive_best_model4_param](https://user-images.githubusercontent.com/4347923/116284596-8b0c5280-a78d-11eb-939d-d9b36d6811df.JPG)
+
+
 ## Model Deployment
 
 The best performing model was achieved by using the AutoML functionalities of MS Azure.
