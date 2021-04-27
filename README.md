@@ -195,7 +195,7 @@ The screencast demonstrates:
   - request rates
   - reponse times
   - failure rates
-  -
+  
   How to enable application insights: https://docs.microsoft.com/en-us/azure/machine-learning/how-to-enable-app-insights
   
   
