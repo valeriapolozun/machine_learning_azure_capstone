@@ -192,7 +192,7 @@ For this purpose I used the Requests library's post function, which has 3 parame
   - input_data: our test data
   - headers: showing the content type
 
-After send the test data to the Scoring URI of the webservice, the service end-point responded to my request - as I received the answer of 2, which is the response in the right format, meaning the predicted price value for the given mobile phone I sent as a test data: 
+After sending the test data to the Scoring URI of the webservice, the service end-point responded to my request - as I received the answer of 2, which is the response in the right format, meaning the predicted price value for the given mobile phone I sent as a test data: 
 
 ![apr27_webservice_test2](https://user-images.githubusercontent.com/4347923/116290139-70d57300-a793-11eb-9d04-1eb11f53272f.JPG)
 
