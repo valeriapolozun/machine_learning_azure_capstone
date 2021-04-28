@@ -176,7 +176,7 @@ In the Details tab of the best Child Run we can see the summary of that run with
 ## Model Deployment
 
 The AutoML experiment has outperformed the Hyperdrive experiment:
-The best performing model was achieved by using AutoML of MS Azure with an accuracy level of 80.04%.
+The best performing model was achieved by using AutoML of MS Azure with an accuracy level of 80.04% (vs. 77% accuracy of Hyperdrive best model's performance) 
 
 This best model has been deployed - in the following screenshot we can see that the service deployment has been completed and it has now a "Healthy" state:
 
