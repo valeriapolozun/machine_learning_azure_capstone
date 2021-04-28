@@ -16,7 +16,9 @@ In the end we use the end-point which has been created and we test using the ser
 ## Project Set Up and Installation
 
 In Azure ML Studio we are going to use jupyter notebooks for running the AutoML and Hyperdrive trainings.
-In order to run the notebooks a compute instance has been used: STANDARD_DS3_V2 virtual machine
+In order to run the notebooks a compute instance has been used: STANDARD_DS3_V2 virtual machine.
+
+In the MS Azure ML Studie we can see this instance listed among the compute instances:
 
 ![apr27_compute_instance_notebook](https://user-images.githubusercontent.com/4347923/116284597-8b0c5280-a78d-11eb-962d-cfb066f2e405.JPG)
 
@@ -147,18 +149,26 @@ The parameters of the best model:
 - Min samples split:4
 - Max depth: 50
 
-In the following screenshots you can see the status of the model training by using `RunDetails` widget as well as the best model trained with it's parameters:
+In the following screenshots you can see the status of the model training by using `RunDetails` widget:
 
 ![hyperdrive_run_details3_27april](https://user-images.githubusercontent.com/4347923/116284600-8ba4e900-a78d-11eb-8317-5a6ecbe39b7f.JPG)
 
 ![hyperdrive_run_details4_27april](https://user-images.githubusercontent.com/4347923/116284603-8c3d7f80-a78d-11eb-8e78-c5a598b1e1d1.JPG)
 
 
+Here we can see the best model trained with its parameters in the long list we get by running get.metrics() function for the best run:
+
 ![apr_27_Hyperdrive_best_model](https://user-images.githubusercontent.com/4347923/116284589-8a73bc00-a78d-11eb-9338-9f4a817fd5a9.JPG)
+
+Also the best run metrics are listed at the end of the list:
 
 ![apr_27_Hyperdrive_best_model2](https://user-images.githubusercontent.com/4347923/116284590-8a73bc00-a78d-11eb-9bd1-1ac63ce7f0c1.JPG)
 
+In MS Azure ML Studio we can also see the overview of all the child runs and the performance evolution in terms of Accuracy:
+
 ![apr_27_Hyperdrive_best_model3](https://user-images.githubusercontent.com/4347923/116284594-8b0c5280-a78d-11eb-8989-4c3b7d4ce9d8.JPG)
+
+In the Details tab of the best Child Run we can see the summary of that run with the metrics details on the right side:  
 
 ![apr_27_Hyperdrive_best_model4_param](https://user-images.githubusercontent.com/4347923/116284596-8b0c5280-a78d-11eb-939d-d9b36d6811df.JPG)
 
@@ -166,11 +176,23 @@ In the following screenshots you can see the status of the model training by usi
 ## Model Deployment
 
 The best performing model was achieved by using the AutoML functionalities of MS Azure.
-The best model has been deployed and afterwards the end-point has been tested by sending some test data to it:
+
+The best model has been deployed - in the following screenshot we can see that the service deployment has been completed and it has now a "Healthy" state:
 
 ![apri_27_deployed_model_healthy](https://user-images.githubusercontent.com/4347923/116284599-8ba4e900-a78d-11eb-8889-79c337848010.JPG)
 
+Afterwards I tested the end-point by sending some test data to it. 
+
+Here you can see my test data including all the features used of the mobile phone:
+
 ![apr27_webservice_test1](https://user-images.githubusercontent.com/4347923/116290133-703cdc80-a793-11eb-9088-8bd1aad530f1.JPG)
+
+For this purpose I used the Requests library's post function, which has 3 parameters:
+  - scoring_uri: the access point of the webservice, where we send the data to
+  - input_data: our test data
+  - headers: showing the content type
+
+After send the test data to the Scoring URI of the webservice, the service end-point responded to my request - as I received the answer of 2, which is the response in the right format, meaning the predicted price value for the given mobile phone I sent as a test data: 
 
 ![apr27_webservice_test2](https://user-images.githubusercontent.com/4347923/116290139-70d57300-a793-11eb-9d04-1eb11f53272f.JPG)
 
